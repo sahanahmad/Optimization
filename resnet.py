@@ -76,6 +76,7 @@ class ResNet(nn.Module):
         self.kernel_size = args.kernel_size
         self.precision_point = args.precision_point
         self.dataset= args.dataset
+        self.epoch_number = args.epoch_limit
 
         self.conv1 = nn.Conv2d(3, 64, kernel_size=3, stride=1, padding=1, bias=False)
         self.bn1 = nn.BatchNorm2d(64)
@@ -90,7 +91,8 @@ class ResNet(nn.Module):
 
         directory = "CSV_Data/"
         precision_point = str(self.precision_point)
-        CSVFile = "ResNet18_"+self.dataset+"_Precision_Point_"+precision_point+".csv"
+        epoch_number = str(self.epoch_number)
+        CSVFile = "ResNet18_"+self.dataset+"_Precision_Point_"+precision_point+"_Epoch_Number_"+epoch_number+".csv"
         self.cfile = directory + CSVFile
         current_working_dir = os.getcwd()
         filename = os.path.join(current_working_dir, self.cfile)
