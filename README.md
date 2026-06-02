@@ -1,7 +1,11 @@
 # When do Convolutional Neural Networks Stop Learning?
-#Paper Under Review ICLR 2023
+CNN Early-Stopping Research
+• Developed CNN early-stopping method via layer-wise data variation analysis — reducing training computation
+by 58% across 6 architectures with no accuracy loss; validated on 3 standard computer vision datasets, 10
+biomedical imaging datasets (MedMNIST V2)
+• Ranked 1st in the Board of Regents Support Fund, Louisiana (RCS FY 2022-23) and received a $149,351 grant
 
-The official PyTorch implementation of When do Convolutional Neural Networks Stop Learning? (ICLR 2023 #Paper Under Review#).
+The official PyTorch implementation of When do Convolutional Neural Networks Stop Learning? .
 
 Required Packages:
 
